@@ -1,0 +1,130 @@
+* {
+    font-family: 'Poppins';
+}
+
+body {
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #6C63FF, #2AB7CA);
+    margin: 0;
+    justify-content: center;
+}
+
+.container {
+    background: #F5F5F5;
+    padding: 40px 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 500px;
+    height: 500px;
+}
+
+h2 {
+    /* margin-bottom: 10px; */
+    margin-top: 5px;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+.input-wrapper {
+    margin-bottom: 10px;
+    text-align: left;
+}
+
+.input-wrapper label {
+    font-size: 15px;
+    margin-bottom: 8px;
+    display: block;
+}
+
+.input-field {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.input-field .material-symbols-outlined {
+    font-size: 20px;
+    color: #979797;
+    margin-right: 10px;
+}
+
+.input-field input {
+    border: none;
+    outline: none;
+    font-size: 14px;
+    color: #333;
+    background: transparent;
+    padding: 8px 0;
+    flex: 1;
+}
+
+.input-field input::placeholder {
+    color: #979797;
+}
+
+.forgot-password {
+    text-align: right;
+    margin-top: 5px;
+}
+
+.forgot-password a {
+    font-size: 13px;
+    color: #979797;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.forgot-password a:hover {
+    text-decoration: underline;
+}
+
+
+form button {
+    width: 100%;
+    padding: 12px;
+    background: #a389d4;
+    border: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+button:hover {
+    background: #8a68c8;
+}
+
+.icons {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.icons img {
+    /* width: 40px;
+    height: 40px; */
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+p {
+    font-size: 13px;
+    margin-top: 25px;
+}
+
+p a {
+    color: #6a11cb;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WorkFinder - Cari Pekerjaan Impian</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+</head>
+<body>
+     <header class="navbar">
+          <div class="logo">
+            <img src="img/logo.png" alt="WorkFinder" />
+          </div>
+          <nav class="nav-list">
+            <ul>
+              <li><a href="">Cari Pekerjaan</a></li>
+              <li><a href="">Cari Perusahaan</a></li>
+              <li><a href="">Pilih Course</a></li>
+            </ul>
+          </nav>
+          <div class="user-profile" onclick="goToProfile()">
+               <span>Akun Saya</span>
+               <img src="https://img.icons8.com/ios-filled/24/737373/user-male-circle.png" alt="User Icon" />
+             </div>             
+        </header>
+    
+        <main>
+          <section class="hero">
+            <div class="hero-content">
+              <div class="description">
+                <h1>Cari Pekerjaan Impian mu dengan Mudah!</h1>
+                <p>Lebih dari 5000+ pekerjaan tersedia. Mulai Karirmu Sekarang!</p>
+              </div>
+    
+              <div class="img">
+                <img src="img/img.png" width="450px" height="400" alt="gambar" />
+              </div>
+            </div>
+    
+            <div class="search-bar">
+              <span class="material-symbols-outlined">search</span>
+              <input type="text" placeholder="Nama Pekerjaan" />
+              <span class="material-symbols-outlined">place</span>
+              <input type="text" placeholder="Tempat, Kota atau Negara" />
+              <button>Cari</button>
+            </div>
+          </section>
+
+    <div class="title-bar">
+    <h2>Lowongan Pekerjaan <span style="color: grey">(206)</span></h2>
+    <div style="position: relative">
+        <button class="sort-button">Terbaru ▾</button>           
+    </div>
+    </div>
+    </div>
+
+    <div class="section">
+    <div class="job-section">
+        <div class="job-card">
+        <img
+            src="img/Netflix.png"
+            alt="Netflix"
+            class="job-logo"
+        />
+        <div class="job-info">
+            <div style="color: gray">Netflix</div>
+            <div class="job-title">Business Development</div>
+            <div class="job-details">
+            <span>🌍 Remote (GMT+8 to GMT+6)</span>
+            <span>💼 Full-time</span>
+            <span>🧠 Senior</span>
+            <span>🏠 Remote</span>
+            </div>
+        </div>
+        <div class="bookmark-icon" onclick="toggleBookmark(this)">
+          <span class="material-symbols-outlined">bookmark</span>
+        </div>            
+      </div>
+
+        <div class="job-card">
+        <img
+            src="img/Netflix.png"
+            alt="Microsoft"
+            class="job-logo"
+        />
+        <div class="job-info">
+            <div style="color: gray">Microsoft</div>
+            <div class="job-title">UI/UX Designer</div>
+            <div class="job-details">
+            <span>🌍 Jakarta</span>
+            <span>💼 Magang</span>
+            <span>🧠 Junior</span>
+            <span>🏠 On-site</span>
+            </div>
+        </div>
+        <div class="bookmark-icon" onclick="saveToBookmark(this)">
+          <span class="material-symbols-outlined">bookmark</span>
+        </div>        
+      </div>
+
+        <div class="job-card">
+        <img
+            src="img/Netflix.png"
+            alt="Microsoft"
+            class="job-logo"
+        />
+        <div class="job-info">
+            <div style="color: gray">Microsoft</div>
+            <div class="job-title">UI/UX Designer</div>
+            <div class="job-details">
+            <span>🌍 Jakarta</span>
+            <span>💼 Magang</span>
+            <span>🧠 Junior</span>
+            <span>🏠 On-site</span>
+            </div>
+        </div>
+        <div class="bookmark-icon" onclick="toggleBookmark(this)">
+          <span class="material-symbols-outlined">bookmark</span>
+        </div>        
+       </div>
+
+        <div class="job-card">
+        <img
+            src="img/Netflix.png"
+            alt="Nike"
+            class="job-logo"
+        />
+        <div class="job-info">
+            <div style="color: gray">Nike</div>
+            <div class="job-title">Marketing Specialist</div>
+            <div class="job-details">
+            <span>🌍 Bandung</span>
+            <span>💼 Full-time</span>
+            <span>🧠 Menengah</span>
+            <span>🏠 Hybrid</span>
+            </div>
+        </div>
+        <div class="bookmark-icon" onclick="saveToBookmark(this)">
+          <span class="material-symbols-outlined">bookmark</span>
+        </div>        
+      </div>
+    </div>
+
+    <div class="filter-section">
+        <div class="filters">
+        <div class="filter-group">
+            <h3>Peran</h3>
+            <label><input type="checkbox" /> Analis (26)</label>
+            <label><input type="checkbox" /> Pengembang Backend (17)</label>
+            <label><input type="checkbox" /> Pengembang Bisnis (31)</label>
+            <label><input type="checkbox" /> Engineer (73)</label>
+            <label><input type="checkbox" /> Desain (64)</label>
+            <span
+            style="color: gray; font-size: 14px; cursor: pointer"
+            id="lihatLainnya"
+            >Lihat Lainnya</span
+            >
+            <div id="extra-roles" style="display: none; margin-top: 10px">
+            <label><input type="checkbox" /> HR & People (12)</label>
+            <label><input type="checkbox" /> QA Engineer (9)</label>
+            <label><input type="checkbox" /> IT Support (7)</label>
+            </div>
+        </div>
+        <div class="filter-group">
+            <h3>Level Senior</h3>
+            <label><input type="checkbox" /> Junior</label>
+            <label><input type="checkbox" /> Menengah</label>
+            <label><input type="checkbox" /> Senior</label>
+            <label><input type="checkbox" /> Expert & Kepemimpinan</label>
+        </div>
+        <div class="filter-group">
+            <h3>Tipe Kerjaan</h3>
+            <label><input type="checkbox" /> Penuh Waktu</label>
+            <label><input type="checkbox" /> Freelance/Kontrak</label>
+            <label><input type="checkbox" /> Magang</label>
+            <label><input type="checkbox" /> Paruh Waktu</label>
+        </div>
+        </div>
+    </div>
+    </div>
+    <footer>
+    <div class="footerbox">
+     <div class="left-section">
+       <img src="img/logo.png" alt="icon" class="icon" />
+       <p>
+         Lorem ipsum vitae consequat morbi egestas eu faucibus facilisi sed
+         non duis dui venenatis nulla tellus enim aliquet congue adipiscing.
+       </p>
+       <a
+         href="https://github.com/rafifdiofadilah/ProjectCapstone"
+         class="github-link"
+       >
+         <img
+           src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+           alt="GitHub"
+           class="github-icon"
+         />
+         Link Github WorkFinder
+       </a>
+     </div>
+
+     <div class="right-section">
+       <ul>
+         <li><a href="#">Cari Pekerjaan</a></li>
+         <li><a href="#">Cari Perusahaan</a></li>
+         <li><a href="#">Pilih Course</a></li>
+         <li><a href="#">Daftar</a></li>
+         <li><a href="#">Masuk</a></li>
+       </ul>
+     </div>
+   </div>
+
+   <div class="footer">
+     <p>Hak Cipta &#169; 2025 || Coding Camp powered by DBS || CC25-SF079</p>
+   </div>
+ </footer>
+ <script src="script.js"></script>
+</body>
+</html>

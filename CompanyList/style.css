@@ -250,6 +250,22 @@ section.hero .search-bar .bookmark-icon .material-symbols-outlined {
   background-color: #cfc3f4;
 }
 
+.job-card-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.job-card {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.job-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
 .job-card-header {
   display: flex;
   align-items: center;
@@ -446,4 +462,35 @@ footer {
   color: #000000;
   border-top: 1px solid black;
   margin-left: calc(-50vw + 50%);
+}
+
+.content {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maintenance {
+  text-align: center;
+}
+
+.maintenance-icon {
+  font-size: 100px;
+  color: #000;
+}
+
+.maintenance-text {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #000;
 }

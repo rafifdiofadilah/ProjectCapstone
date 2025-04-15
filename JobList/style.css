@@ -8,7 +8,6 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  /* overflow-y: hidden; */
 }
 
 body {
@@ -16,6 +15,7 @@ body {
   margin: 0;
   display: flex;
   flex-direction: column;
+  background-color: #f5f7fa;
 }
 
 header.navbar {
@@ -74,34 +74,6 @@ header.navbar {
 .user-profile img {
   width: 24px;
   height: 24px;
-}
-
-header.navbar .Masuk,
-.Daftar {
-  padding: 5px 20px;
-  border-radius: 50px;
-  text-align: center;
-  font-size: 15px;
-  font-weight: 400;
-  cursor: pointer;
-}
-
-header.navbar .Masuk {
-  background-color: white;
-  color: black;
-  border: 2px solid #3b5674;
-}
-
-header.navbar .Daftar {
-  background-color: #3b5674;
-  color: white;
-  border: none;
-}
-
-header.navbar .Masuk:hover {
-  background-color: #3b5674;
-  color: white;
-  transition: all 0.2s ease-in-out;
 }
 
 section.hero {
@@ -401,4 +373,35 @@ footer {
   color: #000000;
   border-top: 1px solid black;
   margin-left: calc(-50vw + 50%);
+}
+
+.content {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maintenance {
+  text-align: center;
+}
+
+.maintenance-icon {
+  font-size: 100px;
+  color: #000;
+}
+
+.maintenance-text {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #000;
 }

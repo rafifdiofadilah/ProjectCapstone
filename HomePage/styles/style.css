@@ -1,9 +1,10 @@
 * {
-  font-family: 'Poppins';
+  font-family: "Poppins";
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
@@ -71,24 +72,41 @@ header.navbar .Masuk,
 header.navbar .Masuk {
   background-color: white;
   color: black;
-  border: 2px solid #3B5674;
+  border: 2px solid #3b5674;
 }
 
 header.navbar .Daftar {
-  background-color: #3B5674;
+  background-color: #3b5674;
   color: white;
   border: none;
 }
 
 header.navbar .Masuk:hover {
-  background-color: #3B5674;
+  background-color: #3b5674;
   color: white;
   transition: all 0.2s ease-in-out;
 }
 
+.user-profile {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  color: #666;
+  font-weight: 600;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  transition: 0.2s ease;
+}
+
+.user-profile img {
+  width: 24px;
+  height: 24px;
+}
+
 section.hero {
   position: relative;
-  background: linear-gradient(to right, #8F8BED, #FFFFFF);
+  background: linear-gradient(to right, #8f8bed, #ffffff);
   padding: 70px;
   height: 500px;
   box-sizing: border-box;
@@ -102,7 +120,7 @@ section.hero {
   justify-content: space-between;
   align-items: center;
   height: 100%;
-  max-width: 1200px; 
+  max-width: 1200px;
   margin: 0 auto;
   padding: 20px;
 }
@@ -149,7 +167,7 @@ section.hero .search-bar {
   width: 750px;
   height: 65px;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  border: 2px solid #6DCCE9;
+  border: 2px solid #6dcce9;
 }
 
 section.hero .search-bar input {
@@ -157,13 +175,13 @@ section.hero .search-bar input {
   flex-grow: 1;
   border: none;
   outline: none;
-  color: #B2AFAF;
+  color: #b2afaf;
   font-size: 1rem;
   margin: 0 10px;
 }
 
 section.hero .search-bar button {
-  background-color: #3B5674;
+  background-color: #3b5674;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -179,7 +197,6 @@ section.hero .search-bar .material-symbols-outlined {
   color: #666666;
 }
 
-
 section.top-jobs {
   padding: 50px 70px;
 }
@@ -192,11 +209,11 @@ section.top-jobs {
 }
 
 .category-title .highlight {
-  color: #6C63FF;
+  color: #6c63ff;
 }
 
 .category-title a {
-  color: #6C63FF;
+  color: #6c63ff;
   text-decoration: none;
   font-weight: 500;
   display: inline-flex;
@@ -223,23 +240,23 @@ section.top-jobs .job-preview {
 }
 
 section.top-jobs .job-preview.green {
-  background-color: #ECFDF5;
+  background-color: #ecfdf5;
 }
 
 section.top-jobs .job-preview.orange {
-  background-color: #FEF2F2;
+  background-color: #fef2f2;
 }
 
 section.top-jobs .job-preview.purple {
-  background-color: #FAF5FF;
+  background-color: #faf5ff;
 }
 
 section.top-jobs .job-preview.blue {
-  background-color: #EFF6FF;
+  background-color: #eff6ff;
 }
 
 section.top-jobs .job-preview.pink {
-  background-color: #FDF2F8;
+  background-color: #fdf2f8;
 }
 
 section.top-jobs .card-header {
@@ -335,7 +352,7 @@ section.reviews {
   padding: 10px 50px 60px;
   text-align: center;
   color: white;
-  background-color: #2AB7CA;
+  background-color: #2ab7ca;
 }
 
 section.reviews h2 {
@@ -455,7 +472,7 @@ section.top-company .bg .circle-bg {
 
 section.top-company .bg .circle-bg::before,
 section.top-company .bg .circle-bg::after {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 50%;
 }
@@ -463,14 +480,14 @@ section.top-company .bg .circle-bg::after {
 section.top-company .bg .circle-bg::before {
   width: 100%;
   height: 100%;
-  background-color: #2AB7CA;
+  background-color: #2ab7ca;
   z-index: 2;
 }
 
 section.top-company .bg .circle-bg::after {
   width: 100%;
   height: 100%;
-  background-color: #6DCCE9;
+  background-color: #6dcce9;
   transform: translate(10px, 10px);
   z-index: 1;
 }
@@ -491,7 +508,7 @@ section.top-company .bg2 .circle-bg {
 
 section.top-company .bg2 .circle-bg::before,
 section.top-company .bg2 .circle-bg::after {
-  content: '';
+  content: "";
   position: absolute;
   border-radius: 50%;
 }
@@ -499,14 +516,14 @@ section.top-company .bg2 .circle-bg::after {
 section.top-company .bg2 .circle-bg::before {
   width: 100%;
   height: 100%;
-  background-color: #8F8BED;
+  background-color: #8f8bed;
   z-index: 1;
 }
 
 section.top-company .bg2 .circle-bg::after {
   width: 100%;
   height: 100%;
-  background-color: #6C63FF;
+  background-color: #6c63ff;
   transform: translate(10px, 10px);
   z-index: 2;
 }
@@ -518,12 +535,11 @@ section.top-company .bg2 * {
 
 footer {
   position: relative;
-  background: linear-gradient(to bottom, #D4F0F5, #B9C5F9);
+  background: linear-gradient(to bottom, #d4f0f5, #b9c5f9);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
-
 }
 
 .header-wrapper {
@@ -535,7 +551,7 @@ footer {
 }
 
 .header-box {
-  background-color: #6DCCE9;
+  background-color: #6dcce9;
   padding: 12px 20px;
   border-radius: 20px;
   display: flex;
@@ -546,7 +562,6 @@ footer {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
 .header-box h1 {
   font-size: 14px;
   font-weight: 600;
@@ -554,7 +569,7 @@ footer {
 }
 
 .btn-dashboard {
-  background-color: #2AB7CA;
+  background-color: #2ab7ca;
   color: black;
   padding: 4px 10px;
   border-radius: 8px;

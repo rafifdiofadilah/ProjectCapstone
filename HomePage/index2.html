@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+    <title>WorkFinder</title>
+  </head>
+
+  <body>
+    <header class="navbar">
+      <div class="logo">
+        <img src="img/logo.png" alt="WorkFinder" />
+      </div>
+      <nav class="nav-list">
+        <ul>
+          <li><a href="../JobList/index.html">Cari Pekerjaan</a></li>
+          <li><a href="../CompanyList/index.html">Cari Perusahaan</a></li>
+          <li><a href="../LearningSuggest/index.html">Pilih Course</a></li>
+        </ul>
+      </nav>
+      <div class="user-profile" onclick="goToProfile()">
+        <span>Akun Saya</span>
+        <img
+          src="https://img.icons8.com/ios-filled/24/737373/user-male-circle.png"
+          alt="User Icon"
+        />
+      </div>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-content">
+          <div class="description">
+            <h1>Cari Pekerjaan Impian mu dengan Mudah!</h1>
+            <p>Lebih dari 5000+ pekerjaan tersedia. Mulai Karirmu Sekarang!</p>
+          </div>
+
+          <div class="img">
+            <img src="img/img.png" width="450px" height="400" alt="gambar" />
+          </div>
+        </div>
+
+        <div class="search-bar">
+          <span class="material-symbols-outlined">search</span>
+          <input type="text" placeholder="Nama Pekerjaan" />
+          <span class="material-symbols-outlined">place</span>
+          <input type="text" placeholder="Tempat, Kota atau Negara" />
+          <button>Cari</button>
+        </div>
+      </section>
+
+      <section class="top-jobs">
+        <div class="category-title">
+          <h2><span class="highlight">Pekerjaan</span> Unggulan</h2>
+          <a href="#"
+            >Lihat Lainnya
+            <span class="material-symbols-outlined">arrow_forward</span></a
+          >
+        </div>
+
+        <div class="job-previews">
+          <div class="job-preview green">
+            <div class="card-header">
+              <div class="logo-name">
+                <img src="img/mayora.png" alt="logo" class="company-logo" />
+                <span class="company-name">Mayora</span>
+              </div>
+              <span class="material-symbols-outlined">bookmark</span>
+            </div>
+            <h3>Product Manager</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Malesuada bibendum sed
+              sodales justo.
+            </p>
+            <div class="labels">
+              <span class="label">Part Time</span>
+              <span class="label">Fresh Graduate</span>
+              <span class="label">Timework</span>
+            </div>
+            <div class="card-footer">
+              <div class="rate-location">
+                <span class="rate">$200/hr</span>
+                <span class="location">Jakarta, Indonesia</span>
+              </div>
+              <button class="detail-btn">Detail</button>
+            </div>
+          </div>
+
+          <div class="job-preview orange">
+            <div class="card-header">
+              <div class="logo-name">
+                <img src="img/mayora.png" alt="logo" class="company-logo" />
+                <span class="company-name">Mayora</span>
+              </div>
+              <span class="material-symbols-outlined">bookmark</span>
+            </div>
+            <h3>Product Manager</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Malesuada bibendum sed
+              sodales justo.
+            </p>
+            <div class="labels">
+              <span class="label">Part Time</span>
+              <span class="label">Fresh Graduate</span>
+              <span class="label">Timework</span>
+            </div>
+            <div class="card-footer">
+              <div class="rate-location">
+                <span class="rate">$200/hr</span>
+                <span class="location">Jakarta, Indonesia</span>
+              </div>
+              <button class="detail-btn">Detail</button>
+            </div>
+          </div>
+
+          <div class="job-preview purple">
+            <div class="card-header">
+              <div class="logo-name">
+                <img src="img/mayora.png" alt="logo" class="company-logo" />
+                <span class="company-name">Mayora</span>
+              </div>
+              <span class="material-symbols-outlined">bookmark</span>
+            </div>
+            <h3>Product Manager</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Malesuada bibendum sed
+              sodales justo.
+            </p>
+            <div class="labels">
+              <span class="label">Part Time</span>
+              <span class="label">Fresh Graduate</span>
+              <span class="label">Timework</span>
+            </div>
+            <div class="card-footer">
+              <div class="rate-location">
+                <span class="rate">$200/hr</span>
+                <span class="location">Jakarta, Indonesia</span>
+              </div>
+              <button class="detail-btn">Detail</button>
+            </div>
+          </div>
+
+          <div class="job-preview blue">
+            <div class="card-header">
+              <div class="logo-name">
+                <img src="img/mayora.png" alt="logo" class="company-logo" />
+                <span class="company-name">Mayora</span>
+              </div>
+              <span class="material-symbols-outlined">bookmark</span>
+            </div>
+            <h3>Product Manager</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Malesuada bibendum sed
+              sodales justo.
+            </p>
+            <div class="labels">
+              <span class="label">Part Time</span>
+              <span class="label">Fresh Graduate</span>
+              <span class="label">Timework</span>
+            </div>
+            <div class="card-footer">
+              <div class="rate-location">
+                <span class="rate">$200/hr</span>
+                <span class="location">Jakarta, Indonesia</span>
+              </div>
+              <button class="detail-btn">Detail</button>
+            </div>
+          </div>
+
+          <div class="job-preview green">
+            <div class="card-header">
+              <div class="logo-name">
+                <img src="img/mayora.png" alt="logo" class="company-logo" />
+                <span class="company-name">Mayora</span>
+              </div>
+              <span class="material-symbols-outlined">bookmark</span>
+            </div>
+            <h3>Product Manager</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Malesuada bibendum sed
+              sodales justo.
+            </p>
+            <div class="labels">
+              <span class="label">Part Time</span>
+              <span class="label">Fresh Graduate</span>
+              <span class="label">Timework</span>
+            </div>
+            <div class="card-footer">
+              <div class="rate-location">
+                <span class="rate">$200/hr</span>
+                <span class="location">Jakarta, Indonesia</span>
+              </div>
+              <button class="detail-btn">Detail</button>
+            </div>
+          </div>
+
+          <div class="job-preview pink">
+            <div class="card-header">
+              <div class="logo-name">
+                <img src="img/mayora.png" alt="logo" class="company-logo" />
+                <span class="company-name">Mayora</span>
+              </div>
+              <span class="material-symbols-outlined">bookmark</span>
+            </div>
+            <h3>Product Manager</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Malesuada bibendum sed
+              sodales justo.
+            </p>
+            <div class="labels">
+              <span class="label">Part Time</span>
+              <span class="label">Fresh Graduate</span>
+              <span class="label">Timework</span>
+            </div>
+            <div class="card-footer">
+              <div class="rate-location">
+                <span class="rate">$200/hr</span>
+                <span class="location">Jakarta, Indonesia</span>
+              </div>
+              <button class="detail-btn">Detail</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="reviews">
+        <h2>Testimoni dari Pengguna Kami</h2>
+        <div class="review-grid">
+          <div class="review-card">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="user">
+              <img
+                src="https://img.icons8.com/ios-filled/24/737373/user-male-circle.png"
+                alt="image"
+              />
+              <div>
+                <h4>Valencia Queena</h4>
+                <p>Fresh Graduate</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="user">
+              <img
+                src="https://img.icons8.com/ios-filled/24/737373/user-male-circle.png"
+                alt="image"
+              />
+              <div>
+                <h4>Valencia Queena</h4>
+                <p>Fresh Graduate</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="user">
+              <img
+                src="https://img.icons8.com/ios-filled/24/737373/user-male-circle.png"
+                alt="image"
+              />
+              <div>
+                <h4>Valencia Queena</h4>
+                <p>Fresh Graduate</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="user">
+              <img
+                src="https://img.icons8.com/ios-filled/24/737373/user-male-circle.png"
+                alt="image"
+              />
+              <div>
+                <h4>Valencia Queena</h4>
+                <p>Fresh Graduate</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="user">
+              <img
+                src="https://img.icons8.com/ios-filled/24/737373/user-male-circle.png"
+                alt="image"
+              />
+              <div>
+                <h4>Valencia Queena</h4>
+                <p>Fresh Graduate</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="review-card">
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="user">
+              <img
+                src="https://img.icons8.com/ios-filled/24/737373/user-male-circle.png"
+                alt="image"
+              />
+              <div>
+                <h4>Valencia Queena</h4>
+                <p>Fresh Graduate</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="top-company">
+        <div class="category-title">
+          <h2><span class="highlight">Pekerjaan</span> Unggulan</h2>
+          <a href="#"
+            >Lihat Lainnya
+            <span class="material-symbols-outlined">arrow_forward</span></a
+          >
+        </div>
+
+        <div class="company-list">
+          <div class="company-card">
+            <div class="line"></div>
+            <div class="company-header">
+              <img src="img/mayora.png" alt="image" class="logo" />
+              <h3>Mayora</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="company-footer">
+              <span>12 Pekerjaan tersedia</span>
+              <span class="material-symbols-outlined">arrow_outward</span>
+            </div>
+          </div>
+
+          <div class="company-card">
+            <div class="line"></div>
+            <div class="company-header">
+              <img src="img/mayora.png" alt="image" class="logo" />
+              <h3>Mayora</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="company-footer">
+              <span>12 Pekerjaan tersedia</span>
+              <span class="material-symbols-outlined">arrow_outward</span>
+            </div>
+          </div>
+
+          <div class="company-card bg">
+            <div class="circle-bg"></div>
+            <div class="line"></div>
+            <div class="company-header">
+              <img src="img/mayora.png" alt="image" class="logo" />
+              <h3>Mayora</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="company-footer">
+              <span>12 Pekerjaan tersedia</span>
+              <span class="material-symbols-outlined">arrow_outward</span>
+            </div>
+          </div>
+
+          <div class="company-card bg2">
+            <div class="circle-bg"></div>
+            <div class="line"></div>
+            <div class="company-header">
+              <img src="img/mayora.png" alt="image" class="logo" />
+              <h3>Mayora</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="company-footer">
+              <span>12 Pekerjaan tersedia</span>
+              <span class="material-symbols-outlined">arrow_outward</span>
+            </div>
+          </div>
+
+          <div class="company-card">
+            <div class="line"></div>
+            <div class="company-header">
+              <img src="img/mayora.png" alt="image" class="logo" />
+              <h3>Mayora</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="company-footer">
+              <span>12 Pekerjaan tersedia</span>
+              <span class="material-symbols-outlined">arrow_outward</span>
+            </div>
+          </div>
+
+          <div class="company-card">
+            <div class="line"></div>
+            <div class="company-header">
+              <img src="img/mayora.png" alt="image" class="logo" />
+              <h3>Mayora</h3>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur. Adipiscing at in in
+              pulvinar condimentum. Non morbi amet et velit facilisis.
+            </p>
+            <div class="company-footer">
+              <span>12 Pekerjaan tersedia</span>
+              <span class="material-symbols-outlined">arrow_outward</span>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="header-wrapper">
+        <div class="header-box">
+          <h1>
+            Lihat Tren pekerjaan, Pendapatan, dan Skill populer di dashboard
+          </h1>
+          <button class="btn-dashboard">Lihat Dashboard</button>
+        </div>
+      </div>
+
+      <div class="container">
+        <div class="left-section">
+          <img src="img/logo.png" alt="icon" class="icon" />
+          <p>
+            Lorem ipsum vitae consequat morbi egestas eu faucibus facilisi sed
+            non duis dui venenatis nulla tellus enim aliquet congue adipiscing.
+          </p>
+          <a
+            href="https://github.com/rafifdiofadilah/ProjectCapstone"
+            class="github-link"
+          >
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/733/733553.png"
+              alt="GitHub"
+              class="github-icon"
+            />
+            Link Github WorkFinder
+          </a>
+        </div>
+
+        <div class="right-section">
+          <ul>
+            <li><a href="#">Cari Pekerjaan</a></li>
+            <li><a href="#">Cari Perusahaan</a></li>
+            <li><a href="#">Pilih Course</a></li>
+            <li><a href="#">Daftar</a></li>
+            <li><a href="#">Masuk</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer">
+        <p>Hak Cipta &#169; 2025 || Coding Camp powered by DBS || CC25-SF079</p>
+      </div>
+    </footer>
+
+    <script src="../Scripts/WorkFinder.js"></script>
+  </body>
+</html>

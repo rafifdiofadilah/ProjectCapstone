@@ -1,45 +1,70 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pengalaman Organisasi</title>
-    <link rel="stylesheet" href="styles/profile3.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="styles/profile3.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
-        rel="stylesheet">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
-</head>
-<body>
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300..700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined"
+    />
+  </head>
+  <body>
     <div class="container">
-        <h1>Pengalaman Organisasi</h1>
-        <form id="formPengalamanOrganisasi">
-            <label for="nama-organisasi">Nama Organisasi</label>
-            <input type="text" id="nama-organisasi" name="nama-organisasi" required>
+      <h1>Pengalaman Organisasi</h1>
+      <form id="formPengalamanOrganisasi">
+        <label for="nama-organisasi">Nama Organisasi</label>
+        <input
+          type="text"
+          id="nama-organisasi"
+          name="nama-organisasi"
+          required
+        />
 
-            <label for="jabatan">Jabatan</label>
-            <input type="text" id="jabatan" name="jabatan" required>
+        <label for="jabatan">Jabatan</label>
+        <input type="text" id="jabatan" name="jabatan" required />
 
-            <label for="deskripsi-singkat">Deskripsi Singkat Organisasi</label>
-            <textarea name="deskripsi-singkat" id="deskripsi-singkat" required></textarea>
+        <label for="deskripsi-singkat">Deskripsi Singkat Organisasi</label>
+        <textarea
+          name="deskripsi-singkat"
+          id="deskripsi-singkat"
+          required
+        ></textarea>
 
-            <label for="tanggal-bergabung">Tanggal Bergabung</label>
-            <input type="date" id="tanggal-bergabung" name="tanggal-bergabung" required>
+        <label for="tanggal-bergabung">Tanggal Bergabung</label>
+        <input
+          type="date"
+          id="tanggal-bergabung"
+          name="tanggal-bergabung"
+          required
+        />
 
-            <label for="tanggal-selesai">Tanggal Selesai</label>
-            <input type="date" id="tanggal-selesai" name="tanggal-selesai" required>
+        <label for="tanggal-selesai">Tanggal Selesai</label>
+        <input
+          type="date"
+          id="tanggal-selesai"
+          name="tanggal-selesai"
+          required
+        />
 
-            <div class="checkbox-group">
-                <label for="belum">
-                    <input type="checkbox" id="belum" name="belum">Belum Pernah Mengikuti Organisasi
-                </label>
-            </div>
+        <div class="checkbox-group">
+          <label for="belum">
+            <input type="checkbox" id="belum" name="belum" />Belum Pernah
+            Mengikuti Organisasi
+          </label>
+        </div>
 
-            <button type="submit">Lanjut <span class="material-symbols-outlined">chevron_right</span></button>
-        </form>
+        <button onclick="window.location.href='profile4.html'" class="btn">
+          Lanjut <span class="material-symbols-outlined">chevron_right</span>
+        </button>
+      </form>
     </div>
-
-</body>
+  </body>
 </html>

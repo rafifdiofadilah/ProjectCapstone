@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -63,7 +63,7 @@
       <section class="top-jobs">
         <div class="category-title">
           <h2><span class="highlight">Pekerjaan</span> Unggulan</h2>
-          <a href="#"
+          <a href="../JobList/index.html"
             >Lihat Lainnya
             <span class="material-symbols-outlined">arrow_forward</span></a
           >
@@ -343,8 +343,8 @@
 
       <section class="top-company">
         <div class="category-title">
-          <h2><span class="highlight">Pekerjaan</span> Unggulan</h2>
-          <a href="#"
+          <h2><span class="highlight">Perusahaan</span> Terfavorit</h2>
+          <a href="../CompanyList/index.html"
             >Lihat Lainnya
             <span class="material-symbols-outlined">arrow_forward</span></a
           >
@@ -458,7 +458,12 @@
           <h1>
             Lihat Tren pekerjaan, Pendapatan, dan Skill populer di dashboard
           </h1>
-          <button class="btn-dashboard">Lihat Dashboard</button>
+          <button
+            onclick="window.location.href='../Dashboard/template.html'"
+            class="btn-dashboard"
+          >
+            Lihat Dashboard
+          </button>
         </div>
       </div>
 
@@ -484,11 +489,11 @@
 
         <div class="right-section">
           <ul>
-            <li><a href="#">Cari Pekerjaan</a></li>
-            <li><a href="#">Cari Perusahaan</a></li>
-            <li><a href="#">Pilih Course</a></li>
-            <li><a href="#">Daftar</a></li>
-            <li><a href="#">Masuk</a></li>
+            <li><a href="../JobList/index.html">Cari Pekerjaan</a></li>
+            <li><a href="../CompanyList/index.html">Cari Perusahaan</a></li>
+            <li><a href="../LearningSuggest/index.html">Pilih Course</a></li>
+            <li><a href="../Authentication/login.html">Daftar</a></li>
+            <li><a href="../Authentication/register.html">Masuk</a></li>
           </ul>
         </div>
       </div>
@@ -498,6 +503,6 @@
       </div>
     </footer>
 
-    <script src="../Scripts/WorkFinder.js"></script>
+    <script src="script.js"></script>
   </body>
 </html>

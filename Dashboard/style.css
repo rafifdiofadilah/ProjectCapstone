@@ -1,0 +1,109 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Fredoka", sans-serif;
+  display: flex;
+  height: 100vh;
+  background-color: #f8f8fc;
+}
+
+.sidebar {
+  width: 220px;
+  background-color: #efedfd;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border-right: 1px solid #dcdcdc;
+}
+
+.sidebar .logo {
+  font-weight: 700;
+  font-size: 18px;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #444;
+  padding: 10px 15px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.nav a.active {
+  background-color: #d7d2fd;
+  color: #000;
+  font-weight: 600;
+}
+
+.settings {
+  font-size: 14px;
+}
+
+.settings a {
+  text-decoration: none;
+  color: #444;
+  display: block;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.content {
+  flex: 1;
+  background-color: white;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.topbar {
+  height: 50px;
+  background-color: #d7d2fd;
+  display: flex;
+  align-items: center;
+  padding: 0 20px;
+  font-weight: 600;
+  font-size: 18px;
+  border-bottom: 1px solid #ccc;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.maintenance {
+  text-align: center;
+}
+
+.maintenance-icon {
+  font-size: 100px;
+  color: #000;
+}
+
+.maintenance-text {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #000;
+}
